@@ -1,4 +1,5 @@
 {
+  "homepage":"https://Aslin10.github.io/foody-express-food-delivery-app",
   "name": "foodapp",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,10 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
