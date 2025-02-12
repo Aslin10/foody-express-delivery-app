@@ -1,0 +1,32 @@
+
+
+
+[
+  {
+      
+    "idCategory": "24",
+    "image":"softdrinks",
+    "name": "Soft Drinks",
+    "options": ["Coke", "Sprite"],
+    "price": 248.97
+  },
+  {
+    "idCategory": "25",
+    "image":"lemonade",
+    "name": "Fresh Lemonade",
+    "price": 331.17
+  },
+  {
+    "idCategory": "26",
+    "image":"coffee",
+    "name": "Coffee",
+    "options": ["Hot", "Cold"],
+    "price": 289.27
+  },
+  {
+    "idCategory": "27",
+    "image":"ice tea",
+    "name": "Iced Tea",
+    "price": 289.27
+  }
+]

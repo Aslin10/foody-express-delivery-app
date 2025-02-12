@@ -1,0 +1,253 @@
+.about {
+    
+  margin: 0 ;
+  text-align: center;
+  overflow: hidden;
+  
+  
+}
+
+
+.brand {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  margin: 15px 15px;
+  transform: translateX(-100%);
+  animation: slideIn 2s ease-out forwards;
+}
+
+h2 span {
+  color: #ff4757;
+  font-weight: bold;
+}
+
+.slogan2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 10px 50px;
+  padding: 10px;
+ 
+}
+.slogan1{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+/* Image styles */
+.about img {
+  width: 100%;
+object-fit: cover;
+  height:380px ;
+  animation: floatBounce 6s ease-in-out infinite;
+
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+@keyframes floatBounce {
+  0%, 100% {
+    transform: translateY(0); /* Starting and ending position */
+  }
+  50% {
+    transform: translateY(-15px); /* Moves up slightly */
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.section1 img{
+  width: 50%;
+  height: 300px;
+  border-radius: 10px;
+  margin: 0px 15px;
+  float: left;
+  animation-delay: 2s;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 10s ease-in-out infinite;
+ 
+ 
+}
+.section2 img {
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0px 15px;
+  float: right;
+  animation-delay: 2s;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 10s ease-in-out infinite;
+}
+
+
+/* Text section styles */
+.section1, .section2 {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width:80%;
+  height: 350px;
+  
+  
+
+  
+}
+@keyframes fadeInSlideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  
+ 
+  100% {
+      opacity: 1;
+      transform: translateY(10px);
+  }
+}
+
+
+.section1 p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6rem;
+  padding: 10px;
+  margin: 5px 0px;
+  animation-delay: 2s;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 10s ease-in-out infinite;
+  
+  
+  
+}
+
+.section2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section2 ul li {
+  font-size: 1rem;
+  margin: 15px 0px;
+  position: relative;
+  padding-left: 25px;
+  animation-delay: 2s;
+  opacity: 0; /* Start hidden */
+  animation: fadeInSlideUp 10s ease-in-out infinite;
+}
+
+.section2 ul li::before {
+  content: '✔';
+  color: #ff4757;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .message {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .slogan2 {
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    text-align: center;
+  
+  }
+  .slogan1 {
+    font-size: 1.2rem;
+    margin: 10px 30px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  .section1, .section2 {
+    text-align: left;
+    width: 80%;
+  height: auto;
+  }
+
+  .section1 p, .section2 ul li {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+
+.section1 img, .section2 img {
+  width: 100%;
+  height: auto;
+  float: none;
+  margin: 10px 0;
+}
+}
+ @media  (min-width: 769px) and (max-width:1140px){
+  .brand {
+    font-size: 2rem;
+    margin: 20px;
+  }
+
+  .slogan2 {
+    font-size: 1.4rem;
+    margin: 20px 50px;
+    text-align: center;
+  
+  }
+  .slogan1 {
+    font-size: 1.4rem;
+    margin: 10px 50px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+
+  .section1, .section2 {
+    text-align: left;
+    width: 80%;
+  height: auto;
+  }
+
+  .section1 p, .section2 ul li {
+    font-size: 1rem;
+    margin: 12px;
+  }
+
+  .section1 img{
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0px 15px;
+    float: left;
+ }
+ .section2 img {
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0px 15px;
+  float: right;
+}
+ }

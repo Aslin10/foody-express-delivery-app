@@ -1,0 +1,73 @@
+[
+    {
+    "idCategory": "15",
+     "image": "image-waffle-desktop",
+     "name": "Waffle with Berries",
+     "category": "Waffle",
+     "price": 230
+  },
+  {
+     "idCategory": "16",
+    "image":"image-creme-brulee-desktop",
+      
+      "name": "Vanilla Bean Crème Brûlée",
+      "category": "Crème Brûlée",
+      "price": 300
+   },
+   {
+     "idCategory": "17",
+      "image":"image-macaron-desktop",
+      
+      "name": "Macaron Mix of Five",
+      "category": "Macaron",
+      "price": 234
+   },
+   { 
+      "idCategory": "18",
+      "image": "image-tiramisu-desktop",
+      
+      "name": "Classic Tiramisu",
+      "category": "Tiramisu",
+      "price": 133
+   },
+   {
+      "idCategory": "19",
+      "image": "image-baklava-desktop",
+      
+      "name": "Pistachio Baklava",
+      "category": "Baklava",
+      "price": 187
+   },
+   {
+      "idCategory": "20",
+      "image":  "image-meringue-desktop",
+      
+      "name": "Lemon Meringue Pie",
+      "category": "Pie",
+      "price": 245
+   },
+   {
+      "idCategory": "21",
+      "image":  "image-cake-desktop",
+      
+      "name": "Red Velvet Cake",
+      "category": "Cake",
+      "price": 450
+   },
+   {
+      "idCategory": "22",
+      "image": "image-brownie-desktop",
+      
+      "name": "Salted Caramel Brownie",
+      "category": "Brownie",
+      "price": 347
+   },
+   {
+      "idCategory": "23",
+      "image":  "image-panna-cotta-desktop",
+      
+      "name": "Vanilla Panna Cotta",
+      "category": "Panna Cotta",
+      "price": 432
+   }
+]
