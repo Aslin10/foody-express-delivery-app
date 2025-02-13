@@ -4,6 +4,7 @@ import facebook from '../assets/images/facebook.svg';
 import twitter from '../assets/images/twitter.svg';
 import instagram from '../assets/images/instagram.svg';
 import whatsapp from '../assets/images/whatsapp.svg';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -19,10 +20,10 @@ export const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-subtitle">Quick Links</h3>
           <ul className="footer-list">
-            <li><a href="/" className="footer-link">Home</a></li>
-            <li><a href="/Menu" className="footer-link">Menu</a></li>
-            <li><a href="/About" className="footer-link">About Us</a></li>
-            <li><a href="/Contact" className="footer-link">Contact</a></li>
+            <li><Link to="/" className="footer-link">Home</Link></li>
+            <li><Link to="/Menu" className="footer-link">Menu</Link></li>
+            <li><Link to="/About" className="footer-link">About Us</Link></li>
+            <li><Link to="/Contact" className="footer-link">Contact</Link></li>
           </ul>
         </div>
 
@@ -40,10 +41,10 @@ export const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-subtitle">Follow Us</h3>
           <ul className="footer-list-icon">
-          <li><a href="https://facebook.com" className="footer-link"><img src={facebook} alt="Facebook"  className="social-icon" /> </a></li>
-<li><a href="https://twitter.com" className="footer-link"><img src={twitter} alt="Twitter" className="social-icon" /></a></li>
-<li><a href="https://instagram.com" className="footer-link"><img src={instagram} alt="Instagram"  className="social-icon"/> </a></li>
-<li><a href="https://whatsapp.com" className="footer-link"><img src={whatsapp} alt="WhatsApp" className="social-icon" /></a></li>
+          <li><Link to="https://facebook.com" className="footer-link"><img src={facebook} alt="Facebook"  className="social-icon" /> </Link></li>
+<li><Link to="https://twitter.com" className="footer-link"><img src={twitter} alt="Twitter" className="social-icon" /></Link></li>
+<li><Link to="https://instagram.com" className="footer-link"><img src={instagram} alt="Instagram"  className="social-icon"/> </Link></li>
+<li><Link to="https://whatsapp.com" className="footer-link"><img src={whatsapp} alt="WhatsApp" className="social-icon" /></Link></li>
 
           </ul>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link} from 'react-router-dom';
 import './home.css';
 import Marquee from "react-fast-marquee";
 
@@ -16,7 +16,7 @@ export const Home = () => {
     <Marquee className='offers'speed={75}>
     🎉 Get 20% off on all beverages! 🍰 Buy 1 Dessert, Get 1 Free! 🥩 Premium Meat Cuts at Flat 15% Off! 🚚 Free Delivery on Orders Above $50!
   </Marquee>
-    <button ><a href='/Menu'>Shop Now</a></button>
+    <button ><Link to='/Menu'>Shop Now</Link></button>
     </div>
     </div>
     

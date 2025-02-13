@@ -46,13 +46,15 @@
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin:2rem ;
+   
 }
-.Main button a {
+.Main button a{
     text-decoration: none;
     color: #ffffff;
      display: inline-block; 
       text-align: center;
 }
+
 .Main button:hover {
     background-color: #FF4949;
     transform: translateY(-3px);

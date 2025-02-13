@@ -5,6 +5,8 @@
   overflow: hidden;
   
   
+  
+  
 }
 
 
@@ -202,7 +204,7 @@ object-fit: cover;
   margin: 10px 0;
 }
 }
- @media  (min-width: 769px) and (max-width:1140px){
+ @media  (min-width: 769px) and (max-width:1240px){
   .brand {
     font-size: 2rem;
     margin: 20px;

@@ -1,250 +1,271 @@
 /* General Navbar Styling */
 .navbar{
-    width: 100%;
-    height:80px;
-    background: #222;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:0px 20px;
-    
-    
+  width: 100%;
+  height:80px;
+  background: #222;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0px 20px;
+  
+  
 
 
 }
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .brand-name {
-    color:#40E0D0 ;
-    font-size: 22px;
-    font-weight: 600;
+  color:#40E0D0 ;
+  font-size: 22px;
+  font-weight: 600;
 }
 .nav-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  flex:1;
 
 } 
 
 /* Desktop Navigation */
 
-    .nav-links {
-        list-style: none;
-        display: flex;
-        
-        align-items: center;
-        padding: 0;
-        margin: 0;
-      }
+  .nav-links {
+      list-style: none;
+      display: flex;
+      
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
 
 
-      .nav-links li {
-        display: inline-block;
-        align-items: center;
-        
-        list-style-type: none;
-        position: relative;
-      }
+    .nav-links li {
+      display: inline-block;
+      align-items: center;
+      
+      list-style-type: none;
+      position: relative;
+    }
 
 
-   
-    .nav-links a {
-        display: flex;
-        align-items: center;
-        gap: 5px; 
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 10px 15px;
-        border-radius: 8px;
-        transition: all 0.3s ease-in-out;
-      }
+ 
+  .nav-links a {
+      display: flex;
+      align-items: center;
+      gap: 5px; 
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
 
 
 .nav-links  a:hover {
-    background: #f0f0f0;
+  background: #f0f0f0;
 
-    color: #10897d;
+  color: #10897d;
 }
 .nav-links.active {
-    display: block;
-  }
+  display: block;
+}
 
 /* Cart Style */
 .cart-size {
-    background: red;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-right: 5px;
-     display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: absolute;
-   top:0px;
-   left:25px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 5px;
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: absolute;
+ top:0px;
+ left:25px;
 }
 
 /* Mobile Menu Toggle */
 .menu-toggle {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: 0.3s ease-in-out;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s ease-in-out;
 }
 .auth-buttons {
-    display: flex;
-    
-  }
+  display: flex;
   
+}
+
+.login-btn, .register-btn,.logout-btn {
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 16px;
+  border: none;
+
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: white;
+}
+.logout-btn{
+  background-color: rgb(234, 68, 68);
+  color: white;
+}
+.register-btn {
+  background-color: #28a745;
+  color: white;
+}
+.logout-btn:hover{
+  background-color: rgb(212, 20, 20) ;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0; 
+      width: 100%;
+      background: #222;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      
+    }
+  .nav-container{
+      display: flex;
+      align-items: center;
+       flex:1;
+       gap:5px;
+       
+       
+      
+      
+  
+  } 
+  .auth-buttons {
+   display: flex;
+   flex:1 ;
+   gap:2px;
+   
+   
+    }
+  
+  .nav-links li {
+      width: 100%;
+
+      position: relative;
+      justify-content: center;
+  
+      
+    }
+  .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+  .menu-toggle {
+      display: block;
+      margin-right: 20px;
+  }
+  .cart-size {
+      background: red;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 5px;
+      position: absolute;
+      top:0;
+      left:25px;
+    }
+  .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #222;
+      padding: 20px;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+  }
+
+  .mobile-nav-links li {
+      list-style-type: none;
+      
+      
+  }
+
+  .mobile-nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      
+  }
+
+  .mobile-nav-links li a:hover {
+      color: #15a597;
+  }
   .login-btn, .register-btn,.logout-btn {
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-right: 10px;
+    
     display: flex;
     align-items: center;
     gap: 2px;
-    font-size: 16px;
+    font-size: 12px;
     border: none;
 
   }
-  
-  .login-btn {
-    background-color: #007bff;
-    color: white;
-  }
-  .logout-btn{
-    background-color: rgb(234, 68, 68);
-    color: white;
-  }
-  .register-btn {
-    background-color: #28a745;
-    color: white;
-  }
-  .logout-btn:hover{
-    background-color: rgb(212, 20, 20) ;
-  }
-  
-  .login-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .register-btn:hover {
-    background-color: #218838;
-  }
-  
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0; 
-        width: 100%;
-        background: #222;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        
-      }
-    .nav-container{
-        display: flex;
-        align-items: center;
-         flex:1;
-        
-        
-    
-    } 
-    .auth-buttons {
-        display:none;
-        
-      }
-    
-    .nav-links li {
-        width: 100%;
-
-        position: relative;
-        justify-content: center;
-    
-        
-      }
-    .nav-links.active {
-        display: flex;
-        
-      }
-
-    .menu-toggle {
-        display: block;
-    }
-    .cart-size {
-        background: red;
-        color: white;
-        font-size: 12px;
-        font-weight: bold;
-        width: 18px;
-        height: 18px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        margin-right: 5px;
-        position: absolute;
-        top:0;
-        left:25px;
-      }
-    .mobile-nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        background: #222;
-        padding: 20px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .mobile-nav-links li {
-        list-style-type: none;
-        
-        
-    }
-
-    .mobile-nav-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        
-    }
-
-    .mobile-nav-links li a:hover {
-        color: #15a597;
-    }
 }

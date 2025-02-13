@@ -76,7 +76,12 @@
   }
   @media (max-width:768px) {
     .contact-container{
-        max-width: 400px;
+        max-width: 320px;
+    }
+    .contact-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
   }
 

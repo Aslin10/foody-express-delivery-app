@@ -202,37 +202,3 @@ flex-wrap: wrap;
   }
 }
 
-@media (max-width: 480px) {
-  .cart-product {
-    margin:0;
-    padding: 0;
-  }
-  .cart-product .pic{
-    margin-bottom: 0.2rem;
-  }
-  
-  .cart-product-details h3 {
-    font-size: 1rem;
-    margin-top: 1rem;
-    
-  }
-
-  .cart-product-details p {
-    font-size: 0.9rem;
-  }
-
-  .quantity-controls .button {
-    padding: 0.5rem 0.7rem;
-    font-size: 0.9rem;
-    border-radius: 50%;
-  }
-
-  .cart-amt h4 {
-    font-size: 1.3rem;
-  }
-
-  .cart-amt .order {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
