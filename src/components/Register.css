@@ -1,0 +1,81 @@
+/* Register.css */
+.auth-container {
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .register {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .click-button{
+
+
+    display: flex;
+    
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-register {
+    background: #28a745;
+    color: white;
+    margin-right: 0.8rem;
+  }
+  
+  .btn-register:hover {
+    background: #218838;
+  }
+  
+  .message {
+
+    margin-top: 15px;
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .auth-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .register {
+      font-size: 20px;
+    }
+  
+    .input-field {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
